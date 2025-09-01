@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="bg-black py-2 px-6 shadow-lg">
+    <header className="bg-lime-600 py-2 px-6 shadow-lg">
       <nav className="container mx-auto flex flex-row items-center h-16 justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -14,21 +14,36 @@ const Header = () => {
                 alt="Jacobi Jayne Logo"
                 width={24}
                 height={36}
-                className="rounded-b-2xl"
+                className="rounded-1xl"
               />
             </div>
           </Link>
         </div>
 
         {/* Navigationslinks */}
-        <div className="hidden md:flex space-x-6 self-end mb-0">
+        <div className="hidden md:flex items-center space-x-6">
+          <Link
+            href="/"
+            className="text-yellow-100 hover:text-white transition-colors duration-300"
+          >
+            Home
+          </Link>
+          <Link
+            href="https://www.livingwithbirds.com/"
+            className="text-yellow-100 hover:text-white transition-colors duration-300"
+          >
+            Shop
+          </Link>
           <Link
             href="/news"
             className="text-yellow-100 hover:text-white transition-colors duration-300"
           >
             News
           </Link>
-          <Link href="/trade" className="text-yellow-100 hover:text-white  transition-colors duration-300">
+          <Link
+            href="/trade"
+            className="text-yellow-100 hover:text-white  transition-colors duration-300"
+          >
             Trade
           </Link>
           <Link
@@ -37,13 +52,16 @@ const Header = () => {
           >
             International
           </Link>
-          <Link href="/contact" className="text-yellow-100 hover:text-white  transition-colors duration-300">
+          <Link
+            href="/contact"
+            className="text-yellow-100 hover:text-white  transition-colors duration-300"
+          >
             Contact
           </Link>
         </div>
 
         {/* Mobiles Menü  !!!!!!! */}
-        <div className="md:hidden self-end mb-0">
+        <div className="md:hidden flex items-center">
           {/* Hamburger-Icon */}
           <button aria-label="Mobile Menu">
             <svg
