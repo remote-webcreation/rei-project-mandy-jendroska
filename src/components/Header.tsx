@@ -13,11 +13,11 @@ const Header = () => {
               <Image 
                 src="/Logo.png" 
                 alt="Jacobi Jayne Logo" 
-                width={50} 
-                height={50} 
-                className="rounded-2xl"
+                width={40} 
+                height={60} 
+                className="rounded-b-2xl"
               />
-              <span className="ml-2 text-xl font-bold">Jacobi Jayne</span>
+              
             </div>
           </Link>
         </div>
@@ -38,9 +38,9 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Mobiles Menü (optional, erfordert weitere Logik) */}
+        {/* Mobiles Menü  !!!!!!! */}
         <div className="md:hidden">
-          {/* Hier könnte ein Hamburger-Icon sein */}
+          {/* Hamburger-Icon */}
           <button aria-label="Mobile Menu">
             <svg 
               className="w-6 h-6" 
